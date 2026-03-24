@@ -1,1 +1,23 @@
+public class while_loops {
+    public static void main(String args[]){
+     //  write hello wrold 6 times 
+        System.out.println("hello world");
+        System.out.println("hello world");
+        System.out.println("hello world");
+        System.out.println("hello world");
+        System.out.println("hello world");
+        System.out.println("hello world");
 
+     // if you want to write it for 100 times you will do it by manually
+        
+     int counter = 0;
+     while(counter < 100){
+        System.out.println("hello world");
+        counter++;
+     }
+     System.out.println("you writen it 100 times");
+        
+    }
+
+    
+}
