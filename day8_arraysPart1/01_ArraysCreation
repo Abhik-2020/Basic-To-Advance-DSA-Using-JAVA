@@ -1,0 +1,16 @@
+public class ArraysCreation{
+    public static void main(String args[]){
+        // DataType ArrrayName [] = new int [size];
+        // Example number 1.
+        int marks[] = new int[50];
+
+
+        // or you can directly enter data in new arrays
+        
+        // Example
+        String fruits[] = {"mango", "apple", "pineapple"};
+        
+        float price[] = {1.4f, 4.5f, 6.7f};
+         
+    }
+}
