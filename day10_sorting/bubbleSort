@@ -1,1 +1,57 @@
+// Class name should ideally start with capital letter (Java convention)
+public class bubbleSort{
 
+    // Method to sort array using Bubble Sort algorithm
+    public static void bubblesort(int arr[]){
+
+        // Store length of array
+        int n = arr.length;
+
+        // Temporary variable used for swapping elements
+        int temp;
+
+        // Outer loop → controls number of passes
+        // After each pass, largest element moves to end
+        for(int i=0; i<n-1; i++){
+
+            // Inner loop → compares adjacent elements
+            // n-1-i → last i elements already sorted, so skip them
+            for(int j=0; j<n-1-i; j++){
+
+                // Compare current element with next element
+                if(arr[j] > arr[j+1]){
+
+                    // Swap if elements are in wrong order
+
+                    temp = arr[j];        // store current element
+                    arr[j] = arr[j+1];    // move next element to current position
+                    arr[j+1] = temp;      // put stored value in next position
+                }
+            }
+        }
+    }
+
+    // Method to print array elements
+    public static void printarr(int [] arr) {
+
+        // Loop through array
+        for(int i=0; i<arr.length; i++){
+
+            // Print each element followed by space
+            System.out.print(arr[i]+" ");
+        }
+    }
+
+    // Main method → program execution starts here
+    public static void main(String[] args) {
+
+        // Declare and initialize array
+        int arr[] = {5,6,4,3,1,2};
+
+        // Call bubble sort method to sort array
+        bubblesort(arr);
+
+        // Print sorted array
+        printarr(arr);
+    }
+}
